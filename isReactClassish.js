@@ -30,7 +30,8 @@ function isReactClassish(Class, React) {
   }
 
   // React 0.13
-  if (hasRender(Class) || descendsFromReactComponent(Class, React)) {
+  //if (hasRender(Class) || descendsFromReactComponent(Class, React)) {
+  if (hasRender(Class)) {
     return true;
   }
 
